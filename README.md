@@ -17,3 +17,5 @@ ISO form: YYYY-MM-DDTHH:MM:SS[.ffffff]Z or signed HH:MM offset. Uppercase T/Z re
 Output UTC ISO plus integer epoch seconds/milliseconds/microseconds. Seconds or milliseconds are null/None if timestamp isn't exactly representable in that integer unit. Never silently rounds, including negative epochs. --json puts the object on stdout; interactive prompts on stderr. No files, saved history, network or clock changes. Bounds errors return 2; exit menu 0 cancels.
 
 17 tests cover epoch zero, positive/negative units, exact precision, offsets, leap date, naive rejection, overflow and invalid syntax. Linux tested; Pi/non-Linux untested. Marker/version1.0.0 published. The current public-only Pi App Store cannot discover private repositories; authenticated store support is not verified.
+
+Fullscreen update: Store interactive launch uses terminal-sized board cells or wrapped full-terminal utility input/results with PgUp/PgDn scrolling. Original core rules and direct CLI commands remain unchanged. Ctrl+C cancels utility entry, result Enter returns; no new dependency downloads. Linux PTY resize/restoration checked; physical Pi untested.
